@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:orientation="vertical"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:weightSum="1">
+		
+			
+		<ScrollView android:id="@+id/scrollView1" 
+		android:layout_height="fill_parent" 
+		android:layout_width="fill_parent">
+		
+			<LinearLayout android:id="@+id/linearLayout1"
+			 android:orientation="vertical" 
+			android:layout_width="fill_parent"
+			 android:layout_height="fill_parent">
+			
+				<TextView android:text="@string/name" android:layout_width="fill_parent" android:layout_height="wrap_content"></TextView>
+				<EditText android:id="@+id/txtNombre" android:layout_height="wrap_content" android:layout_width="210dp"><requestFocus></requestFocus></EditText>
+				<TextView android:text="Ap. Paterno" android:id="@+id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+				<EditText android:layout_height="wrap_content" android:layout_width="206dp" android:id="@+id/txtPaterno"></EditText>
+				<TextView android:text="Ap. Materno" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+				<EditText android:layout_height="wrap_content" android:inputType="textPersonName" android:layout_width="204dp" android:id="@+id/txtMaterno"></EditText>
+				<TextView android:text="DNI" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+				<EditText android:layout_height="wrap_content" android:inputType="number" android:layout_width="205dp" android:maxLength="8" android:id="@+id/txtDNI"></EditText>
+				<TextView android:text="Razon Social" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+				<EditText android:layout_height="wrap_content" android:layout_width="240dp" android:id="@+id/txtRazSoc"></EditText>
+				<TextView android:text="RUC" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+				<EditText android:layout_height="wrap_content" android:inputType="number" android:layout_width="207dp" android:maxLength="11" android:id="@+id/txtRUC"></EditText>
+				
+				<TextView android:layout_width="wrap_content"		 
+				 android:layout_height="wrap_content" 
+				 android:text="@string/not_usr"></TextView>	 
+				<EditText android:layout_height="wrap_content" android:id="@+id/txtNotUsr" android:layout_width="113dp" android:maxLength="3"></EditText>
+		
+				<Button android:id="@+id/btnEnviar" 
+					android:layout_height="wrap_content"
+					android:onClick="buscarAlertaHandler"
+					android:text="Enviar" android:layout_width="fill_parent"></Button>
+					
+				<TextView android:text="TextView" 
+					android:layout_height="wrap_content" 
+					android:id="@+id/lblRes" 
+					android:layout_width="282dp"></TextView>
+			
+			</LinearLayout>
+		</ScrollView>
+		
+</LinearLayout>
