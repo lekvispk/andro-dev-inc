@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Directorio Notarial Colegio de Notarios de Lima</string>
+    <string name="app_name">Directorio - Notarías de Lima</string>
+    
+    <string-array name="distrito_label">
+		  <item>-TODOS-</item>		
+		  <item>CERCADO</item>
+		  <item>ANCON</item>
+		  <item>ATE</item>
+		  <item>BARRANCO</item>
+		  <item>BRENA</item>
+		  <item>CARABAYLLO</item>
+		  <item>COMAS</item>
+		  <item>CHACLACAYO</item>
+		  <item>CHORRILLOS</item>
+		  <item>EL AGUSTINO</item>
+		  <item>JESUS MARIA</item>
+		  <item>LA MOLINA</item>
+		  <item>LA VICTORIA</item>
+		  <item>LINCE</item>
+		  <item>LURIGANCHO</item>
+		  <item>LURIN</item>
+		  <item>MAGDALENA DEL MAR</item>
+		  <item>MIRAFLORES</item>
+		  <item>PACHACAMAC</item>
+		  <item>PUCUSANA</item>
+		  <item>PUEBLO LIBRE</item>
+		  <item>PUENTE PIEDRA</item>
+		  <item>PUNTA NEGRA</item>
+		  <item>PUNTA HERMOSA</item>
+		  <item>RIMAC</item>
+		  <item>SAN BARTOLO</item>
+		  <item>SAN ISIDRO</item>
+		  <item>INDEPENDENCIA</item>
+		  <item>SAN JUAN DE MIRAFLORES</item>
+		  <item>SAN LUIS</item>
+		  <item>SAN MARTIN DE PORRES</item>
+		  <item>SAN MIGUEL</item>
+		  <item>SANTIAGO DE SURCO</item>
+		  <item>SURQUILLO</item>
+		  <item>VILLA MARIA DEL TRIUNFO</item>
+		  <item>SAN JUAN DE LURIGANCHO</item>
+		  <item>SANTA MARIA DEL MAR</item>
+		  <item>SANTA ROSA</item>
+		  <item>LOS OLIVOS</item>
+		  <item>CIENEGUILLA</item>
+		  <item>SAN BORJA</item>
+		  <item>VILLA EL SALVADOR</item>
+		  <item>SANTA ANITA</item>
+	</string-array>
+	    
+	    
+    <string-array name="distrito_id">
+    	  <item>00</item>
+		  <item>01</item>
+		  <item>02</item>
+		  <item>03</item>
+		  <item>04</item>
+		  <item>05</item>
+		  <item>06</item>
+		  <item>07</item>
+		  <item>08</item>
+		  <item>09</item>
+		  <item>10</item>
+		  <item>11</item>
+		  <item>12</item>
+		  <item>13</item>
+		  <item>14</item>
+		  <item>15</item>
+		  <item>16</item>
+		  <item>17</item>
+		  <item>18</item>
+		  <item>19</item>
+		  <item>20</item>
+		  <item>21</item>
+		  <item>22</item>
+		  <item>23</item>
+		  <item>24</item>
+		  <item>25</item>
+		  <item>26</item>
+		  <item>27</item>
+		  <item>28</item>
+		  <item>29</item>
+		  <item>30</item>
+		  <item>31</item>
+		  <item>32</item>
+		  <item>33</item>
+		  <item>34</item>
+		  <item>35</item>
+		  <item>36</item>
+		  <item>37</item>
+		  <item>38</item>
+		  <item>39</item>
+		  <item>40</item>
+		  <item>41</item>
+		  <item>42</item>
+		  <item>43</item>
+	</string-array>
+	    
+	    
+</resources>

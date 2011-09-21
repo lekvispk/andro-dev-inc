@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent" 
+              android:layout_height="fill_parent"
+              android:stretchColumns="1"             
+              android:background="@drawable/verde">
+        <TableRow>
+       		<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceSmall" android:text="Información General : " android:id="@+id/lblDetalle"  android:textColor="#FFF"></TextView>
+        </TableRow>
+       
+       <TableRow>
+        	<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceSmall" android:text="DIRECCIÓN:" android:id="@+id/lbltexto1"  android:textColor="#FFF"/>
+	    </TableRow>
+       <TableRow>
+        	<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="texto" android:id="@+id/lblDireccion"  android:textColor="#FFF"/>
+	    </TableRow>
+	    <TableRow>
+        	<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceSmall" android:text="HORARIO DE ATENCIÓN:" android:id="@+id/lbltexto2"  android:textColor="#FFF"/>
+	    </TableRow>
+	    <TableRow>
+        	<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="texto" android:id="@+id/lblHorario"  android:textColor="#FFF"/>
+	    </TableRow>
+	    <TableRow>
+        	<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceSmall" android:text="TELEFONOS:" android:id="@+id/lbltexto3"  android:textColor="#FFF"/>
+	    </TableRow>
+        <TableRow>
+        	<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="texto" android:id="@+id/lblTelefono" android:autoLink="phone"/>
+	    </TableRow>
+	    <TableRow>
+        	<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceSmall" android:text="E-MAIL:" android:id="@+id/lbltexto4"  android:textColor="#FFF"/>
+	    </TableRow>       
+        <TableRow>
+        	<TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="TextView" android:id="@+id/lblEmail" android:autoLink="email"/>
+	    </TableRow>
+	    <TableRow>
+        	<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceSmall" android:text="PAGINA WEB:" android:id="@+id/lbltexto5"  android:textColor="#FFF"/>
+	    </TableRow>		
+		<TableRow>
+	        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="TextView" android:id="@+id/lblWeb" android:autoLink="web"/>
+	   </TableRow>
+	   <TableRow>
+			<ImageButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mapa22" android:id="@+id/btnMapa"></ImageButton>
+		</TableRow>
+</TableLayout >
