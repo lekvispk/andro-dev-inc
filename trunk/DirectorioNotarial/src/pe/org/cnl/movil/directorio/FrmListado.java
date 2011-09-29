@@ -14,6 +14,7 @@ import android.widget.SimpleCursorAdapter;
 
 public class FrmListado extends ListActivity  {
 
+	private static final String TAG ="LISTA";
 	 private Cursor mNotesCursor;
 	 private NotasDbAdapter mDbHelper;
 	 
@@ -62,6 +63,9 @@ public class FrmListado extends ListActivity  {
 	                bundle.putString("web", c.getString(c.getColumnIndexOrThrow("de_url_nota")) );
 	                bundle.putString("latitud", c.getString(c.getColumnIndexOrThrow("latitud")) );
 	                bundle.putString("longitud", c.getString(c.getColumnIndexOrThrow("longitud")) );
+	                
+	                Log.d(TAG,"LAT = "+bundle.getString("latitud"));
+	                Log.d(TAG,"LON = "+bundle.getString("longitud"));
 	                
 	                intent.putExtras(bundle);
 	                startActivity(intent);

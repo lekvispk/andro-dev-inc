@@ -29,19 +29,21 @@ public class FrmMapa extends MapActivity{
         mapa.setBuiltInZoomControls(true);
         
         Bundle bundle = getIntent().getExtras();
-        Double lat = Double.parseDouble( bundle.getString("latitud") );
-        Double lon = Double.parseDouble( bundle.getString("longitud") );
+        
+        int latitude = (int) (Double.parseDouble(bundle.getString("latitud")) * 1E6);
+        int longitude = (int) (Double.parseDouble(bundle.getString("longitud")) * 1E6);
         Integer zoom = Integer.parseInt(  bundle.getString("zoom") );
         
-        GeoPoint loc =  new GeoPoint(lat.intValue(), lon.intValue()); 
+        //GeoPoint loc =  new GeoPoint(lat.intValue(), lon.intValue()); 
+        GeoPoint loc =  new GeoPoint( latitude , longitude );
         controlMapa.setCenter(loc);
         controlMapa.setZoom(zoom);
      
         //Añadimos la capa de marcadores
         List<Overlay> capas = mapa.getOverlays();
         OverlayMapa om = new OverlayMapa();
-        om.setLatitud(lat);
-        om.setLongitud(lon);
+        om.setLatitud( Double.parseDouble(bundle.getString("latitud")) * 1E6 );
+        om.setLongitud(  Double.parseDouble(bundle.getString("longitud"))* 1E6 );
         om.setDireccion(bundle.getString("direccion"));
         capas.add(om);
         mapa.postInvalidate();
