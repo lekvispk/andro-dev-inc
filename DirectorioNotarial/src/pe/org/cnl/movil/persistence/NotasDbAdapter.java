@@ -13,10 +13,10 @@ import android.util.Log;
 public class NotasDbAdapter {
  
     private static String DATABASE_NAME="notarios";
-    private static int 	DATABASE_VERSION =6;
+    private static int 	DATABASE_VERSION =8;
     private static String  BD_TABLA = "notarios";
     public static final String KEY_ROWID = "_id";
-    private static String DATABASE_CREATE = "CREATE TABLE " + BD_TABLA +" ( " + KEY_ROWID +" INTEGER primary key autoincrement,  de_comp TEXT, no_nota TEXT, de_dire TEXT, de_hora_nota TEXT, nu_tele_nota TEXT, de_mail_nota TEXT, de_url_nota TEXT , co_ubig TEXT , sisev INTEGER , latitud INTEGER, longitud INTEGER)";
+    private static String DATABASE_CREATE = "CREATE TABLE " + BD_TABLA +" ( " + KEY_ROWID +" INTEGER primary key autoincrement,  de_comp TEXT, no_nota TEXT, de_dire TEXT, de_hora_nota TEXT, nu_tele_nota TEXT, de_mail_nota TEXT, de_url_nota TEXT , co_ubig TEXT , sisev INTEGER , latitud TEXT , longitud TEXT)";
     
     private DatabaseHelper mDbHelper;
     private SQLiteDatabase mDb;
@@ -32,10 +32,9 @@ public class NotasDbAdapter {
         @Override
         public void onCreate(SQLiteDatabase db){
         	 db.execSQL(DATABASE_CREATE);
-        	         	 
-        	 db.execSQL(" insert into notarios (" + KEY_ROWID +",de_comp, no_nota, de_dire, de_hora_nota, nu_tele_nota,de_mail_nota, de_url_nota,co_ubig, sisev, latitud , longitud ) values('1','DOCTORA JUANA DE ARCO','DE ARCO','JR. LOS QUEMADOS 1800','De Lunes a Viernes de 9:00 a 7:00 pm. Sábado de 9:00 a 12:00 m.','','','','150125', 0,0,0) ; ");
-        	 
-        	 
+
+       	  db.execSQL(" insert into notarios (" + KEY_ROWID +",de_comp, no_nota, de_dire, de_hora_nota, nu_tele_nota,de_mail_nota, de_url_nota,co_ubig, sisev, latitud , longitud ) values('143','DOCTORA MIRYAN ROSALVA ACEVEDO MENDOZA','ACEVEDO MENDOZA MIRYAN ROSALVA','AV. JAVIER PRADO OESTE N°850 MAGDALENA DEL MAR','De Lunes a Viernes de 8:30 a 6:30 pm. Sábado de 9:00 a 1:00 pm','460-6887/460-5005','miryanacevedo@notariaacevedomendoza.com','www.notariaacevedo.com','150117', 1,-12.093343,-77.059908) ; ");//,
+       	 
         }
  
         @Override
